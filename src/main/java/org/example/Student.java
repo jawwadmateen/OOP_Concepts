@@ -5,7 +5,7 @@ public class Student
     String name;
     static int init_Static_Body;
     float marks;
-    int rollno;
+    int rollno;//
     final int CAMPUS_CODE=001;
     static int no_Of_Students;
 
