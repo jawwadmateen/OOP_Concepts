@@ -4,14 +4,36 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Student s1= new Student();
+        Student s2= new Student("John",55.5f,11);
+        //s2.CAMPUS_CODE=33;  Assigning value to final keyword variable
+        Student s3;
+        Student s4=new Student();
+        s3=s2;
+        s3.study();
+        s3.rollno=12;
+        System.out.println("s3 roll number is "+s3.rollno);
+        System.out.println("s4 data: "+s4.rollno+" "+s4.name+" "+s4.marks);
+        Student s5;
+//        for (int i=0;i<10000000;i++)  Loop for calling finalize function when garbage collection works
+//        {
+//            s5=new Student();
+//        }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        final Student wrapperCheck=new Student("John",62.55f,12);
+//        wrapperCheck=s4;  demonstrating error when final keyword is used and you are reassigning values
+        wrapperCheck.marks=35;
+        System.out.println("You can Assign values to primitive datatypes "+wrapperCheck.marks);
+        System.out.println("Total number of students enrolled are "+Student.no_Of_Students);
+        System.out.println("Initialized through static body  "+Student.init_Static_Body);
+        Integer w1=12;
+        w1=13;
+
+        //Packages are nothing but folder (container) for classes
+
+
+
+
+
     }
 }
