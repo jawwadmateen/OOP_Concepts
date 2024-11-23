@@ -8,7 +8,7 @@ public class Student
     int rollno;//gg
     final int CAMPUS_CODE=001;
     static int no_Of_Students;
-
+    //Static variable,function,class everything is resolved at compile time 
     static
     {
         init_Static_Body=100; //initialized when class loads for first time (for static members)
