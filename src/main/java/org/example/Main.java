@@ -28,6 +28,11 @@ public class Main {
         System.out.println("Initialized through static body  "+Student.init_Static_Body);
         Integer w1=12;
         w1=13;
+        Singleton Single_Instace=Singleton.getInstance(); //constructor will be called once here
+        Singleton Single_Instace1=Singleton.getInstance(); //same instance will be returned
+        Singleton Single_Instace2=Singleton.getInstance(); //same instance will be returned
+        Singleton Single_Instace3=Singleton.getInstance(); //same instance will be returned
+
 
         //Packages are nothing but folder (container) for classes
 
