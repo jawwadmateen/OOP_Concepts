@@ -18,7 +18,7 @@ public class Student
         System.out.println("hello");
         Student.no_Of_Students+=1;
     }
-    Student(String name,float marks,int rollno) //parametrized constructor
+    Student(String name,float marks,int rollno) //parameterized constructor
     {
         this();
         this.name=name;
@@ -33,7 +33,7 @@ public class Student
     static void fun()
     {
         System.out.println("Static method called");
-        //study(); // will invoke an error as non static method called without obj inside static meethod
+        //study(); // will invoke an error as non static method called without obj inside static method
     }
     void fun2()
     {
