@@ -15,7 +15,8 @@ public class Inheritance
         this.param2=h1.param2;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         childClass w1=new childClass(1,2,3);
         Inheritance w2=new childClass(w1);
     }
